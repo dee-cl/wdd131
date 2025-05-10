@@ -9,6 +9,7 @@ header {
     grid-column: 1/4;
     text-align: center;
     justify-content: center;
+    font-family: "faculty glyphic", sans-serif;
 }
 
 nav ul {
@@ -78,6 +79,7 @@ main {
     padding: 0;
 }
 .card h2 {
+    font-family: "faculty glyphic", sans-serif;
     grid-column: span 3;
     text-align: center;
     background-color: rgb(30, 3, 48);
@@ -86,6 +88,7 @@ main {
     margin: 0;
 }
 .card h3 {
+    font-family: "faculty glyphic", sans-serif;
     grid-column: span 2;
     text-align: center;
     margin: 0;
