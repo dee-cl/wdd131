@@ -2,10 +2,15 @@ img {
     width: 150px;
 }
 header {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(30, 3, 48);
     color: white;
     grid-column: 1/4;
+    text-align: center;
+    justify-content: center;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -61,9 +66,14 @@ main {
 .card figure {
     grid-column: 1/2;
     grid-row:4/5;
+    margin: 0;
+    padding: 0;
 }
 .card figcaption {
     text-align: center;
+    font-size: 12px;
+    margin: 0px 0px 10px;
+    padding: 0;
 }
 .card h2 {
     grid-column: span 3;
@@ -81,6 +91,7 @@ main {
 }
 .card p {
     margin: 10px;
+    line-height: 1.5;
 
 }
 .card:first-of-type p {
