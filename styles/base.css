@@ -1,0 +1,97 @@
+img {
+    width: 150px;
+}
+header {
+    background-color: rgb(30, 3, 48);
+    color: white;
+    grid-column: 1/4;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+nav li {
+    color: white;
+}
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav a:hover {
+    text-decoration: underline overline;
+}
+footer {
+    background-color: rgb(30, 3, 48);
+    color: white;
+    grid-column: 1/4;
+    text-align: center;
+}
+main {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.card {
+    width: auto;
+    border: black 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+.card:first-of-type {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display:grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto auto auto;
+}
+.card:first-of-type img {
+    margin: 10px;
+    border: 1px solid black;
+    grid-column: 3/4;
+}
+.card figure {
+    grid-column: 1/2;
+    grid-row:4/5;
+}
+.card figcaption {
+    text-align: center;
+}
+.card h2 {
+    grid-column: span 3;
+    text-align: center;
+    background-color: rgb(30, 3, 48);
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+.card h3 {
+    grid-column: span 2;
+    text-align: center;
+    margin: 0;
+    
+}
+.card p {
+    margin: 10px;
+
+}
+.card:first-of-type p {
+    grid-row: 2/3;
+    grid-column: span 2;
+}
+.card:first-of-type p:nth-of-type(2) {
+    grid-row: 4/5;
+    grid-column: span 2;
+}
+
+.card:nth-of-type(2) {
+    grid-row: span 2;
+}
