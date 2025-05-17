@@ -1,0 +1,42 @@
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main{
+    display: grid;
+    grid-template-columns: auto;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    }
+    main h2{
+        grid-column: span 2;
+    }
+}
+@media only screen and (min-width: 70em) {
+    main{
+        grid-template-columns: auto auto auto;
+    }
+    main h2{
+        grid-column: span 3;
+    }
+}

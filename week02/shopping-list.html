@@ -36,13 +36,15 @@
         const button = document.querySelector("button");
         button.addEventListener("click", () => {
             const item = input.value;
-            input.value = "";
             const li = document.createElement("li");
-            li.textContent = item;
             const span = document.createElement("span");
-            span.textContent = input.value;
             const button = document.createElement("button");
+
+            input.value = "";
+            li.textContent = item;
+            span.textContent = input.value;
             button.textContent = "Remove";
+            
             input.focus();
             button.addEventListener("click", () => {
                 list.removeChild(li);
