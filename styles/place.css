@@ -37,11 +37,13 @@ header {
         position: relative;
     }
 h1 {
-	font-size: auto;
 	padding: 1rem;
     font-family: "faculty glyphic", sans-serif;
 	color: #fff;
 	text-align: center;
+}
+th,td {
+    font-family: "noto serif", serif;
 }
 main {
     width: 90%;
