@@ -6,7 +6,7 @@
 		display: flex;
 	}
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block;
 		flex: 1 1 100%;
 	}
 	.navigation a {

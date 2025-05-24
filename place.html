@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Dalton Climer | Idaho page">
+    <meta name="author" content="Dalton Climer">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Idaho - United States of America</h1>
+    </header>
+    <main>
+        <div class="heroimg">
+            <picture>
+               <source srcset="images/idaho-flag.webp" media="(max-width: 700px)">
+                <img src="images/heroimg.webp" alt="Idaho Flag or Image of river in Idaho">
+            </picture>
+
+        
+            <div class="datatable datatable1">
+                <table>
+                    <h2>Idaho Data</h2>
+                    <tr>
+                        <th>Area:</th>
+                        <td>83,642 square miles</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>1,990,460</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Boise</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>English, Spanish</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>USD</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>gmt-6</td>
+                    </tr>
+                    <tr>
+                        <th>Area Code:</th>
+                        <td>(208)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="datatable datatable2">
+                <table>
+                    <div class="weather">
+                    <h2>Weather</h2>
+                    <img src="images/weather-icon.svg" alt="Weather Indicator">
+                    </div>
+                    <tr>
+                        <th>Temperature</th>
+                        <td id="temp">67°F</td>
+                    </tr>
+                    <tr>
+                        <th>Weather Condition:</th>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed:</th>
+                        <td id="wind">7 Mph</td>
+                    </tr>
+                    <tr>
+                        <Th>Wind Chill:</Th>
+                        <td id="windchill"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Dalton Climer - Idaho</p>
+        <p>last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
