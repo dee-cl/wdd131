@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.faculty-glyphic-regular {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.noto-serif-regular {
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+p, a, figcaption {
+    font-family: "Noto Serif", serif;
+}
+header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 3, 48);
+    font-family: "faculty glyphic", sans-serif;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+
+h1 {
+	font-size: 1rem;
+	padding: 1rem;
+    font-family: "faculty glyphic", sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+p {
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 /0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.4rem 0.75rem;
+	background-color: rgb(30, 3, 48);
+	color: #ffffff;
+}
+#menu::before {
+	content: "≡";
+}
+
+nav {
+    display: flex;
+	position: relative;
+}
+.navigation {
+    position: relative;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+#menu:hover,
+.navigation a:hover,
+.navigation a:active {
+	color: rgb(0, 0, 0);
+	background-color: rgb(163, 106, 255)
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.tcard{
+    display: grid;
+    grid-template-columns: auto;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+figure {
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+footer {
+    background-color: rgb(30, 3, 48);
+    color: rgb(255, 255, 255);
+    grid-column: 1/4;
+    text-align: center;
+}
+footer p {
+    background-color: rgb(30, 3, 48);
+}
