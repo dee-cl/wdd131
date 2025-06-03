@@ -69,7 +69,33 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+    // Add more temple objects here...
+  {
+    templeName: "Bacolod philippines Temple",
+    location: "Bacolod, Philippines",
+    dedicated: "2019, October, 5",
+    area: 26700,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/bacolod-philippines-temple/bacolod-philippines-temple-60736.jpg"
+    },
+    
+    {
+    templeName: "Casper Wyoming Temple",
+    location: "Casper, Wyoming USA",
+    dedicated: "2024, November, 24",
+    area: 9950,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/casper-wyoming-temple/casper-wyoming-temple-51918.jpg"
+    },
+
+    {
+    templeName: "Portland Oregon Temple",
+    location: "Portland, Oregon USA",
+    dedicated: "1989, August, 19-21",
+    area: 80500,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/portland-oregon-temple/portland-oregon-temple-51641.jpg"
+    },
 ];
 
 
@@ -141,11 +167,13 @@ function createTempleCard(templeList = temples) {
         img.setAttribute("alt", `${temple.templeName} temple`)
         img.setAttribute("loading", "lazy");
 
+        img.setAttribute("style", "max-width: 400px; max-height: 250px;");
+
+        card.appendChild(img);
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedicated);
         card.appendChild(area);
-        card.appendChild(img);
 
         document.querySelector(".tcard").appendChild(card)
     })
