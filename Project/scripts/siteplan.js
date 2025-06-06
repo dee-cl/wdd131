@@ -1,16 +1,19 @@
 const themeToggleButton = document.getElementById('themeToggle');
 const backgroundDiv = document.querySelector('.background');
+const themeToggleImage = themeToggleButton.querySelector('img');
 
 function setDarkTheme(isDark) {
 
     if (isDark) {
         document.body.classList.add('dark-mode');
         backgroundDiv.classList.add('dark-mode');
+        themeToggleImage.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
        
     } else {
         document.body.classList.remove('dark-mode');
         backgroundDiv.classList.remove('dark-mode');
+        themeToggleImage.classList.remove('dark-mode');
         localStorage.setItem('theme', 'light');
         
     }
