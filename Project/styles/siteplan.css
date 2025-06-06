@@ -43,7 +43,7 @@ body.dark-mode {
     --current-highlight: var(--dark-highlight);
     --inverse-highlight: var(--bright-highlight);
     
-    
+    background-color: #000000;
     
 }
 
