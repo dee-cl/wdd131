@@ -8,7 +8,7 @@
     --bright-highlight: #FFD700; 
     --dark-highlight: #00CED1;      
 
-    /* Default to bright mode colors */
+
     --current-primary-accent: var(--bright-primary-accent);
     --current-secondary-accent: var(--bright-secondary-accent);
     --current-background: var(--bright-background);
@@ -29,7 +29,7 @@ body.dark-mode {
     --dark-text-secondary: #FFD700;  
     --dark-highlight: #00CED1;       
 
-    /* Override with dark mode colors when body has 'dark-mode' class */
+    
     --current-primary-accent: var(--dark-primary-accent);
     --current-secondary-accent: var(--dark-secondary-accent);
     --current-background: var(--dark-background);
@@ -41,8 +41,8 @@ body.dark-mode {
 
     background: linear-gradient(
         to bottom,
-        var(--current-background) 10%, /* light color at the top */
-        var(--current-secondary-background) 50% /* normal background at the bottom */
+        var(--current-background) 10%, 
+        var(--current-secondary-background) 50% 
     );
 }
 
