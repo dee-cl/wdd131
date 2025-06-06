@@ -1,14 +1,17 @@
 const themeToggleButton = document.getElementById('themeToggle');
+const backgroundDiv = document.querySelector('.background');
 
 function setDarkTheme(isDark) {
-    // Conditional Branching
+
     if (isDark) {
         document.body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark'); // Store preference in localStorage
+        backgroundDiv.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
        
     } else {
         document.body.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light'); // Store preference in localStorage
+        backgroundDiv.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
         
     }
 }
