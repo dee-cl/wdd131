@@ -57,15 +57,7 @@ body.dark-mode {
     background-color: transparent; 
 }
 
-.background.dark-mode { 
-    
-    background-image: url('https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/07/forgotten-realms-swamp-cave-swamp-by-piotr-dura.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(10px);
 
-}
 .background::before {
     content: '';
     position: absolute;
@@ -137,9 +129,7 @@ header {
 }
 
 .holder {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+
     background-color: transparent;
 }
 

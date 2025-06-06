@@ -1,0 +1,7 @@
+@media only screen and (min-width: 1000px){
+    .holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    }
+}
