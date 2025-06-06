@@ -1,0 +1,111 @@
+:root {
+    --bright-primary-accent: #327fb9;  
+    --bright-secondary-accent: #323232; 
+    --bright-background: #868686;  
+    --bright-secondary-background: #6BA2C7;     
+    --bright-text-primary: hsl(0, 0%, 0%);    
+    --bright-text-secondary: #000000;   
+    --bright-highlight: #FFD700; 
+    --dark-highlight: #00CED1;      
+
+    /* Default to bright mode colors */
+    --current-primary-accent: var(--bright-primary-accent);
+    --current-secondary-accent: var(--bright-secondary-accent);
+    --current-background: var(--bright-background);
+    --current-secondary-background: var(--bright-secondary-background);
+    --current-text-primary: var(--bright-text-primary);
+    --current-text-secondary: var(--bright-text-secondary);
+    --current-highlight: var(--bright-highlight);
+    --inverse-highlight: var(--dark-highlight);
+}
+
+
+body.dark-mode {
+    --dark-primary-accent: #7242d1;    
+    --dark-secondary-accent: #FFD700;  
+    --dark-background: #130635;   
+    --dark-secondary-background: #060211;   
+    --dark-text-primary: #FFFFFF;   
+    --dark-text-secondary: #FFD700;  
+    --dark-highlight: #00CED1;       
+
+    /* Override with dark mode colors when body has 'dark-mode' class */
+    --current-primary-accent: var(--dark-primary-accent);
+    --current-secondary-accent: var(--dark-secondary-accent);
+    --current-background: var(--dark-background);
+    --current-secondary-background: var(--dark-secondary-background);
+    --current-text-primary: var(--dark-text-primary);
+    --current-text-secondary: var(--dark-text-secondary);
+    --current-highlight: var(--dark-highlight);
+    --inverse-highlight: var(--bright-highlight);
+
+    background: linear-gradient(
+        to bottom,
+        var(--current-background) 10%, /* light color at the top */
+        var(--current-secondary-background) 50% /* normal background at the bottom */
+    );
+}
+
+body{
+    padding: 0;
+    margin:0;
+    height: 100vh;
+    color: var(--current-text-primary);
+    
+    
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+header {
+    background-color: var(--current-background);
+    color: var(--current-text-secondary);
+    padding: 1px;
+    margin:0px;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right:20px;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theme-toggle img {
+    border-radius: 50%;
+}
+
+.theme-toggle img:hover {
+    box-shadow: 0 0 16px 4px var(--inverse-highlight);
+}
+
+.holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: transparent;
+}
+
+.holder section {
+    border: 2px solid var(--current-secondary-accent);
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.holder section h2 {
+    background-color: transparent;
+    color: var(--current-text-secondary)
+}

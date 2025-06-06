@@ -1,0 +1,141 @@
+
+:root {
+    --bright-primary-accent: #004F8A;  
+    --bright-secondary-accent: #323232; 
+    --bright-background: #F9FAFD;       
+    --bright-text-primary: #000000;    
+    --bright-text-secondary: #757575;   
+    --bright-highlight: #FFD700;       
+
+    /* Default to bright mode colors */
+    --current-primary-accent: var(--bright-primary-accent);
+    --current-secondary-accent: var(--bright-secondary-accent);
+    --current-background: var(--bright-background);
+    --current-text-primary: var(--bright-text-primary);
+    --current-text-secondary: var(--bright-text-secondary);
+    --current-highlight: var(--bright-highlight);
+}
+
+
+body.dark-mode {
+    --dark-primary-accent: #7242d1;    
+    --dark-secondary-accent: #FFD700;  
+    --dark-background: #120A1C;      
+    --dark-text-primary: #FFFFFF;   
+    --dark-text-secondary: #424242;  
+    --dark-highlight: #00CED1;       
+
+    /* Override with dark mode colors when body has 'dark-mode' class */
+    --current-primary-accent: var(--dark-primary-accent);
+    --current-secondary-accent: var(--dark-secondary-accent);
+    --current-background: var(--dark-background);
+    --current-text-primary: var(--dark-text-primary);
+    --current-text-secondary: var(--dark-text-secondary);
+    --current-highlight: var(--dark-highlight);
+}
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--current-background);
+    color: var(--current-text-primary); 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: var(--current-primary-accent);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--current-secondary-accent);
+    position: relative;
+}
+
+header h1, header p {
+    color: var(--current-text-primary); /* Ensures contrast against primary accent background */
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 8px 15px;
+    background-color: var(--current-secondary-accent);
+    color: var(--current-text-secondary); /* Text on button background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--current-primary-accent); /* Use primary accent for hover for strong contrast */
+    color: var(--current-text-primary); /* Keep text color for high contrast */
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: var(--current-background);
+    border: 1px solid var(--current-text-secondary); /* Text secondary for borders for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--current-secondary-accent); /* Accent on background */
+    border-bottom: 2px solid var(--current-primary-accent); /* Accent on background */
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--current-background);
+    border: 1px solid var(--current-text-secondary); /* Text secondary for borders */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--current-primary-accent); /* Accent on background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: var(--current-primary-accent); /* Accent on background */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: var(--current-text-primary); /* Primary text color for content */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: var(--current-text-primary); /* Darker footer for contrast */
+    color: var(--current-background); /* Lighter text on dark footer */
+    font-size: 0.9em;
+    border-top: 2px solid var(--current-secondary-accent); /* Accent on background */
+}
