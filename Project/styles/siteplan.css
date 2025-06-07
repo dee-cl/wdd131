@@ -1,12 +1,12 @@
 :root {
     --bright-primary-accent: #327fb9;  
-    --bright-secondary-accent: #323232; 
-    --bright-background: #868686; 
-    --bright-background-transparent: #868686a1; 
-    --bright-secondary-background: #6BA2C7;     
-    --bright-text-primary: hsl(0, 0%, 0%);    
+    --bright-secondary-accent: #3C3828; 
+    --bright-background: #D7BF98; 
+    --bright-background-transparent: #d7bf98be; 
+    --bright-secondary-background: #E2D1B5;     
+    --bright-text-primary: #3C3828;    
     --bright-text-secondary: #000000;   
-    --bright-highlight: #FFD700; 
+    --bright-highlight: #98B0D7; 
     --dark-highlight: #7220cf;      
 
 
@@ -21,6 +21,29 @@
     --inverse-highlight: var(--dark-highlight);
 }
 
+.eagle-lake-regular {
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kings-regular {
+  font-family: "Kings", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "Eagle Lake";
+    background-color: var(--current-secondary-background)
+}
+
+p {
+    font-family: "Kings";
+    font-size: 20px;
+}
+
+
 
 body.dark-mode {
     --dark-primary-accent: #7242d1;    
@@ -28,7 +51,7 @@ body.dark-mode {
     --dark-background: #130635;
     --dark-background-transparent: rgba(19, 6, 53, 0.603);    
     --dark-secondary-background: #060211;   
-    --dark-text-primary: #FFFFFF;   
+    --dark-text-primary: #ffffff;   
     --dark-text-secondary: #FFD700;  
     --dark-highlight: #00CED1;       
 
@@ -45,11 +68,10 @@ body.dark-mode {
     
     background-color: #000000;
     
+    
 }
 
-header img.dark-mode {
-    filter: grayscale(100%);
-}
+
 
 .background {
     position: fixed;
@@ -98,7 +120,7 @@ body{
 }
 
 main {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     height: 100%;
     z-index: 1;
@@ -110,6 +132,10 @@ header {
     color: var(--current-text-secondary);
     padding: 1px;
     margin:0px;
+}
+
+header h1 {
+    margin: 15px 0 15px 30px
 }
 
 .theme-toggle {
