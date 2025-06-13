@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="product review page">
+<meta name="author" content="Dalton Climer">
+<title>Product Review page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/form-small.css" rel="stylesheet">
+<link href="styles/form.css" rel="stylesheet">
+<script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <legend>Product</legend>
+                <label>Product*
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
+                <div class="rating" ><span>Overall Rating*</span><br>
+                    <label><input type="radio" name="rating" value="1" required>&star;</label>
+                    <label><input type="radio" name="rating" value="2" required>&star;&star;</label>
+                    <label><input type="radio" name="rating" value="3" required>&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Specifics</legend>
+                <label>Date of Installation*<input type="date" name="installation" required></label>
+                <div class="features">What features did you find useful(select all that apply)
+                <label><input type="checkbox" id="utility" name="utility" value="yes"> Utiliy</label>
+                <label><input type="checkbox" id="modularity" name="modularity" value="yes"> Modularity</label>
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" id="duration" name="duration" value="yes"> Duration</label>
+                <label><input type="checkbox" id="usefulness" name="usefulness" value="yes"> Usefulness</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Review</legend>
+                <div>Your Name(Optional)</div>
+                <label for="name"  ><input type="text" id="name" name="name"></label>
+                <div>Written Review(Optional)</div>
+                <label for="reviewtext" ><textarea id="reviewtext" name="reviewtext"></textarea> </label>
+                
+            </fieldset>
+            <div class="submission">
+                    <input type="submit" id="submitbut" value="Complete Review">
+                </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Dalton Climer - Idaho</p>
+        <p>last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
