@@ -8,12 +8,12 @@
     <meta name="author" content="Climer">
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplansmall.css">
-    
+    <link rel="preload" as="image" href="images/codex.webp" type="image/webp">
+    <link rel="preload" as="image" href="images/armor.webp" type="image/webp">
+    <link rel="preload" as="image" href="images/lightbutton.webp" type="image/webp" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Kings&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="images/lightbutton.webp" type="image/webp">
-    <link rel="preload" as="image" href="images/codex.webp" type="image/webp">  
 </head>
 <body>
     <div class="background"></div>
@@ -21,46 +21,43 @@
         <div>
             <nav>
                 <ul>
-                    <a href="index.html" aria-label="Home">Caster's Codex</a>
-                    <a href="beastiary.html" class="link">Beastairy</a>
-                    <a href="armory.html"class="link">Armory</a>
+                    <li><a href="index.html" aria-label="Home">Caster's Codex</a></li>
+                    <li><a href="beastiary.html" class="link">Beastairy</a></li>
+                    <li><a href="armory.html" class="link">Armory</a></li>
                 </ul>
             </nav>
-        </div>   
+        </div>
         <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-        <img src="images/lightbutton.webp" alt="Toggle theme" width="50" height=50>
-        
-    </button>
+            <img src="images/lightbutton.webp" alt="Toggle theme" width="50" height=50>
+        </button>
     </header>
     <main>
         <div class="door">
             <div class="door-crop door1">
-                <a href="beastiary.html" >
+                <a href="beastiary.html">
                     <img src="images/codex.webp" alt="beastiary link" width="600" height="840" loading="eager" decoding="async">
                 </a>
-                <h2>Beastairy</h2>
+                <h2>Beastiary</h2>
             </div>
             <div class="door-crop door2">
-                <a href="armory.html" >
-                    <img src="images/armor.webp" alt="Armory link" width="736" height="413" >
+                <a href="armory.html">
+                    <img src="images/armor.webp" alt="Armory link" width="736" height="413">
                 </a>
                 <h2>Armory</h2>
             </div>
             <div class="door-crop door3" hidden>
                 <a href="alchemy.html" hidden>
-                    <img src="images/alchemy.webp" alt="beastiary-link" width="643" height="360">
+                    <img src="images/alchemy.webp" alt="alchemy-link" width="643" height="360">
                 </a>
                 <h2 hidden>Alchemy</h2>
             </div>
-
-            
         </div>
-
     </main>
     <footer>
         <p>&copy; <span id="year"></span> Dalton Climer - Idaho</p>
         <p>last modified: <span id="lastModified"></span></p>
     </footer>
+
     <script src="scripts/siteplan.js" defer></script>
 </body>
 </html>

@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         completeCard.classList.add("complete-card");
         completeCard.innerHTML = `
         <div class="card-large">
-            <button id="return" class="return-button">← Back to Beastiary</button>
+            <button id="return" class="return-button"><strong>← Back to Beastiary</strong></button>
             <div class="card-head">
                     <h2>${creature.name} - CR ${creature.cr} (${creature.xp})</h2>
                     <img src="${creature.image_url}" alt="${creature.name} image" loading="lazy">

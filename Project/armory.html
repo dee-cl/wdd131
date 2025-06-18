@@ -9,14 +9,21 @@
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplansmall.css">
     <script src="scripts/siteplan.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/eaglelake/v25/ptRMTiqbb….woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Kings&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background"></div>
     <header>
-        <a href="./index.html" aria-label="Home">Caster's Codex</a>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Caster's Codex</a></li>
+                    <li><a href="beastiary.html" class="link">Beastairy</a></li>
+                    <li><a href="armory.html" class="link">Armory</a></li>
+                </ul>
+            </nav>
+        </div> 
         <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
         <img src="images/lightbutton.webp" alt="Toggle theme" width="50" height=50>
     </button>
