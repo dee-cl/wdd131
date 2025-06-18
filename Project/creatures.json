@@ -1,0 +1,1544 @@
+[
+  {
+    "name": "Troll",
+    "size": "Large",
+    "type": "Giant",
+    "alignment": "Chaotic Evil",
+    "armor": {
+      "value": 15,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 84,
+      "formula": "8d10 + 40"
+    },
+    "speed": {
+      "walk": 30,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 18,
+      "dexterity": 13,
+      "constitution": 20,
+      "intelligence": 7,
+      "wisdom": 9,
+      "charisma": 7
+    },
+    "saves": [],
+    "skills": [
+      {
+        "name": "Perception",
+        "bonus": 2
+      }
+    ],
+    "vulnerabilities": [
+      "Acid",
+      "Fire"
+    ],
+    "resistances": [],
+    "immunities": [],
+    "condition_immunities": [],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception 12"
+    ],
+    "languages": [
+      "Giant"
+    ],
+    "cr": 5,
+    "xp": "1,800 XP",
+    "abilities": [
+      {
+        "name": "Keen Smell",
+        "description": "The troll has advantage on Wisdom (Perception) checks that rely on smell."
+      },
+      {
+        "name": "Regeneration",
+        "description": "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "Special",
+        "to_hit": 0,
+        "range": "",
+        "target": "",
+        "damage": [],
+        "description": "The troll makes three attacks: one with its bite and two with its claws."
+      },
+      {
+        "name": "Bite",
+        "type": "Melee Weapon Attack",
+        "to_hit": 7,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "1d6 + 4",
+            "type": "Piercing"
+          }
+        ],
+        "description": "Hit: 7 (1d6 + 4) piercing damage."
+      },
+      {
+        "name": "Claw",
+        "type": "Melee Weapon Attack",
+        "to_hit": 7,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "2d6 + 4",
+            "type": "Slashing"
+          }
+        ],
+        "description": "Hit: 11 (2d6 + 4) slashing damage."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "Fearsome green-skinned giants, trolls eat anything they can catch and devour. Only acid and fire can arrest the regenerative properties of a troll's flesh.",
+    "tags": [
+      "Giant",
+      "Regeneration",
+      "Monster",
+      "Carnivore"
+    ],
+    "habitat": [
+      "UnderDark, Mountains, Forests, Arctic, Hills, Swamp"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30836/144/1000/1000/638063929586218907.png"
+  },
+  {
+    "name": "Yeti",
+    "size": "Large",
+    "type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "armor": {
+      "value": 12,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 51,
+      "formula": "6d10 + 18"
+    },
+    "speed": {
+      "walk": 40,
+      "burrow": 0,
+      "climb": 40,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 18,
+      "dexterity": 13,
+      "constitution": 16,
+      "intelligence": 8,
+      "wisdom": 12,
+      "charisma": 7
+    },
+    "saves": [],
+    "skills": [
+      {
+        "name": "Perception",
+        "bonus": 3
+      },
+      {
+        "name": "Stealth",
+        "bonus": 3
+      }
+    ],
+    "vulnerabilities": [
+      "Fire"
+    ],
+    "resistances": [],
+    "immunities": [
+      "Cold"
+    ],
+    "condition_immunities": [],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception 13"
+    ],
+    "languages": [
+      "Yeti"
+    ],
+    "cr": 3,
+    "xp": "700 XP",
+    "abilities": [
+      {
+        "name": "Fear of Fire",
+        "description": "If the yeti takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+      },
+      {
+        "name": "Keen Smell",
+        "description": "The yeti has advantage on Wisdom (Perception) checks that rely on smell."
+      },
+      {
+        "name": "Snow Camouflage",
+        "description": "The yeti has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "Special",
+        "to_hit": 0,
+        "range": "",
+        "target": "",
+        "damage": [],
+        "description": "The yeti can use its Chilling Gaze and makes two claw attacks."
+      },
+      {
+        "name": "Claw",
+        "type": "Melee Weapon Attack",
+        "to_hit": 6,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "1d6 + 4",
+            "type": "Slashing"
+          },
+          {
+            "formula": "1d6",
+            "type": "Cold"
+          }
+        ],
+        "description": "Hit: 7 (1d6 + 4) slashing damage plus 3 (1d6) cold damage."
+      },
+      {
+        "name": "Chilling Gaze",
+        "type": "Special",
+        "to_hit": 0,
+        "range": "30 ft.",
+        "target": "One creature it can see",
+        "damage": [
+          {
+            "formula": "3d6",
+            "type": "Cold"
+          }
+        ],
+        "description": "The yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a DC 13 Constitution saving throw against this magic or take 10 (3d6) cold damage and then be paralyzed for 1 minute, unless it is immune to cold damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends on it, the target is immune to the Chilling Gaze of all yetis (but not abominable yetis) for 1 hour."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "Yeti are hulking monstrosities that stalk alpine peaks in a ceaseless hunt for food. Their snow-white fur lets them move like ghosts against the frozen landscape.",
+    "tags": [
+      "Monstrosity",
+      "Cold",
+      "Hunter",
+      "Mountain"
+    ],
+    "habitat": [
+      "Arctic",
+      "Mountains"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30836/587/1000/1000/638063940297377715.png"
+  },
+  {
+    "name": "Earth Elemental",
+    "size": "Large",
+    "type": "Elemental",
+    "alignment": "Neutral",
+    "armor": {
+      "value": 17,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 126,
+      "formula": "12d10 + 60"
+    },
+    "speed": {
+      "walk": 30,
+      "burrow": 30,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 20,
+      "dexterity": 8,
+      "constitution": 20,
+      "intelligence": 5,
+      "wisdom": 10,
+      "charisma": 5
+    },
+    "saves": [],
+    "skills": [],
+    "vulnerabilities": [
+      "Thunder"
+    ],
+    "resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing"
+    ],
+    "immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned",
+      "Unconscious"
+    ],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Tremorsense 60 ft.",
+      "Passive Perception 10"
+    ],
+    "languages": [
+      "Terran"
+    ],
+    "cr": 5,
+    "xp": "1,800 XP",
+    "abilities": [
+      {
+        "name": "Earth Glide",
+        "description": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
+      },
+      {
+        "name": "False Appearance",
+        "description": "While the elemental remains motionless, it is indistinguishable from an inanimate boulder or section of earth."
+      },
+      {
+        "name": "Siege Monster",
+        "description": "The elemental deals double damage to objects and structures."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "Special",
+        "to_hit": 0,
+        "range": "",
+        "target": "",
+        "damage": [],
+        "description": "The elemental makes two slam attacks."
+      },
+      {
+        "name": "Slam",
+        "type": "Melee Weapon Attack",
+        "to_hit": 8,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "2d8 + 5",
+            "type": "Bludgeoning"
+          }
+        ],
+        "description": "Hit: 14 (2d8 + 5) bludgeoning damage."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "An earth elemental is a hulking mass of living rock, earth, and minerals. It moves with a rumbling gait, its body often incorporating the debris of its surroundings. Earth elementals are slow but incredibly powerful, capable of shattering stone and bone with equal ease.",
+    "tags": [
+      "Elemental",
+      "Earth",
+      "Construct",
+      "Large"
+    ],
+    "habitat": [
+      "Underdark",
+      "Mountains",
+      "Caverns",
+      "Rocky Terrain"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30783/692/1000/1000/638062015664899420.png"
+  },
+  {
+    "name": "Gnoll",
+    "size": "Medium",
+    "type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "armor": {
+      "value": 15,
+      "type": "Hide Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 22,
+      "formula": "5d8"
+    },
+    "speed": {
+      "walk": 30,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 14,
+      "dexterity": 12,
+      "constitution": 11,
+      "intelligence": 6,
+      "wisdom": 10,
+      "charisma": 7
+    },
+    "saves": [],
+    "skills": [],
+    "vulnerabilities": [],
+    "resistances": [],
+    "immunities": [],
+    "condition_immunities": [],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception 10"
+    ],
+    "languages": [
+      "Gnoll"
+    ],
+    "cr": 0.5,
+    "xp": "100 XP",
+    "abilities": [
+      {
+        "name": "Rampage",
+        "description": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "type": "Melee Weapon Attack",
+        "to_hit": 4,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "1d4 + 2",
+            "type": "Piercing"
+          }
+        ],
+        "description": "Hit: 4 (1d4 + 2) piercing damage."
+      },
+      {
+        "name": "Spear",
+        "type": "Melee or Ranged Weapon Attack",
+        "to_hit": 4,
+        "range": "5 ft. or range 20/60 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "1d6 + 2",
+            "type": "Piercing"
+          }
+        ],
+        "description": "Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack."
+      },
+      {
+        "name": "Longbow",
+        "type": "Ranged Weapon Attack",
+        "to_hit": 3,
+        "range": "150/600 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "1d8 + 1",
+            "type": "Piercing"
+          }
+        ],
+        "description": "Hit: 5 (1d8 + 1) piercing damage."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "Gnolls are ravenous, hyena-headed humanoids that live to kill and plunder. They are nomadic, traveling in packs and leaving behind a trail of destruction and devoured corpses.",
+    "tags": [
+      "Humanoid",
+      "Gnoll",
+      "Pack Tactics",
+      "Demon-Worshipper"
+    ],
+    "habitat": [
+      "Deserts",
+      "Badlands",
+      "Wastelands",
+      "Savannas"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30784/505/1000/1000/638062044385041691.png"
+  },
+  {
+    "name": "Cyclops",
+    "size": "Huge",
+    "type": "Giant",
+    "alignment": "Chaotic Neutral",
+    "armor": {
+      "value": 14,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 138,
+      "formula": "12d12 + 60"
+    },
+    "speed": {
+      "walk": 30,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 22,
+      "dexterity": 11,
+      "constitution": 20,
+      "intelligence": 8,
+      "wisdom": 6,
+      "charisma": 10
+    },
+    "saves": [],
+    "skills": [],
+    "vulnerabilities": [],
+    "resistances": [],
+    "immunities": [],
+    "condition_immunities": [],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception 8"
+    ],
+    "languages": [
+      "Giant"
+    ],
+    "cr": 6,
+    "xp": "2,300 XP",
+    "abilities": [
+      {
+        "name": "Poor Depth Perception",
+        "description": "The cyclops has disadvantage on any attack roll against a target more than 30 feet away."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "Special",
+        "to_hit": 0,
+        "range": "",
+        "target": "",
+        "damage": [],
+        "description": "The cyclops makes two greatclub attacks."
+      },
+      {
+        "name": "Greatclub",
+        "type": "Melee Weapon Attack",
+        "to_hit": 9,
+        "range": "10 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "3d8 + 6",
+            "type": "Bludgeoning"
+          }
+        ],
+        "description": "Hit: 19 (3d8 + 6) bludgeoning damage."
+      },
+      {
+        "name": "Rock",
+        "type": "Ranged Weapon Attack",
+        "to_hit": 9,
+        "range": "30/120 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "4d10 + 6",
+            "type": "Bludgeoning"
+          }
+        ],
+        "description": "Hit: 28 (4d10 + 6) bludgeoning damage."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "Cyclopes are one-eyed giants that eke out a meager existence in wild lands. They are a terrifying threat in combat due to their size and strength, but they can often be tricked by clever foes.",
+    "tags": [
+      "Giant",
+      "Cyclops"
+    ],
+    "habitat": [
+      "Coastal",
+      "Desert",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Underdark"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30762/257/1000/1000/638061114971477789.png"
+  },
+  {
+    "name": "Clay Golem",
+    "size": "Large",
+    "type": "Construct",
+    "alignment": "Unaligned",
+    "armor": {
+      "value": 14,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 133,
+      "formula": "14d10 + 56"
+    },
+    "speed": {
+      "walk": 20,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 20,
+      "dexterity": 9,
+      "constitution": 18,
+      "intelligence": 3,
+      "wisdom": 8,
+      "charisma": 1
+    },
+    "saves": [],
+    "skills": [],
+    "vulnerabilities": [],
+    "resistances": [],
+    "immunities": [
+      "Acid",
+      "Poison",
+      "Psychic",
+      "Bludgeoning",
+      "Piercing",
+      "Slashing from nonmagical attacks that aren't adamantine"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned"
+    ],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception 9"
+    ],
+    "languages": [
+      "Understands the languages of its creator but can't speak"
+    ],
+    "cr": 9,
+    "xp": "5,000 XP",
+    "abilities": [
+      {
+        "name": "Acid Absorption",
+        "description": "Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+      },
+      {
+        "name": "Berserk",
+        "description": "Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+      },
+      {
+        "name": "Immutable Form",
+        "description": "The golem is immune to any spell or effect that would alter its form."
+      },
+      {
+        "name": "Magic Resistance",
+        "description": "The golem has advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Magic Weapons",
+        "description": "The golem's weapon attacks are magical."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "Special",
+        "to_hit": 0,
+        "range": "",
+        "target": "",
+        "damage": [],
+        "description": "The golem makes two slam attacks."
+      },
+      {
+        "name": "Slam",
+        "type": "Melee Weapon Attack",
+        "to_hit": 8,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "2d10 + 5",
+            "type": "Bludgeoning"
+          }
+        ],
+        "description": "Hit: 16 (2d10 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the *greater restoration* spell or other magic."
+      },
+      {
+        "name": "Haste (Recharge 5–6)",
+        "type": "Special",
+        "to_hit": 0,
+        "range": "",
+        "target": "",
+        "damage": [],
+        "description": "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "Clay golems are often divinely endowed with purpose by priests of great faith. However, clay is a weak vessel for life force. If the golem is damaged, the elemental spirit bound into it can break free. Such a golem runs amok, smashing everything around it until it is destroyed or completely repaired.",
+    "tags": [
+      "Construct",
+      "Golem"
+    ],
+    "habitat": [
+      "Any (often found guarding tombs, vaults, or sacred sites)"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30783/964/1000/1000/638062024732910911.png"
+  },
+  {
+    "name": "Dust Mephit",
+    "size": "Small",
+    "type": "Elemental",
+    "alignment": "Neutral Evil",
+    "armor": {
+      "value": 12,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 17,
+      "formula": "5d6"
+    },
+    "speed": {
+      "walk": 30,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 30,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 5,
+      "dexterity": 14,
+      "constitution": 10,
+      "intelligence": 9,
+      "wisdom": 11,
+      "charisma": 10
+    },
+    "saves": [],
+    "skills": [
+      {
+        "name": "Perception",
+        "bonus": 2
+      },
+      {
+        "name": "Stealth",
+        "bonus": 4
+      }
+    ],
+    "vulnerabilities": [
+      "Fire"
+    ],
+    "resistances": [],
+    "immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Poisoned"
+    ],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception 12"
+    ],
+    "languages": [
+      "Auran",
+      "Terran"
+    ],
+    "cr": 0.5,
+    "xp": "100 XP",
+    "abilities": [
+      {
+        "name": "Death Burst",
+        "description": "When the mephit dies, it explodes in a burst of dust. Each creature within 5 feet of it must then succeed on a DC 10 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+      },
+      {
+        "name": "Innate Spellcasting (1/Day)",
+        "description": "The mephit can innately cast *sleep*, requiring no material components. Its innate spellcasting ability is Charisma."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Claws",
+        "type": "Melee Weapon Attack",
+        "to_hit": 4,
+        "range": "5 ft.",
+        "target": "One creature",
+        "damage": [
+          {
+            "formula": "1d4 + 2",
+            "type": "Slashing"
+          }
+        ],
+        "description": "Hit: 4 (1d4 + 2) slashing damage."
+      },
+      {
+        "name": "Blinding Breath (Recharge 6)",
+        "type": "Special",
+        "to_hit": 0,
+        "range": "15-foot cone",
+        "target": "Each creature in that area",
+        "damage": [],
+        "description": "The mephit exhales a 15-foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "Dust mephits are composed of air and fine earth. They are drawn to forsaken places, and they think everything associated with death is hilarious. They are mean-spirited tricksters that dwell on the Elemental Planes.",
+    "tags": [
+      "Elemental"
+    ],
+    "habitat": [
+      "Planar (Elemental Planes)",
+      "Desert"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/34175/931/1000/1000/638190241938100148.png"
+  },
+  {
+    "name": "Efreeti",
+    "size": "Large",
+    "type": "Elemental",
+    "alignment": "Lawful Evil",
+    "armor": {
+      "value": 17,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 200,
+      "formula": "16d10 + 112"
+    },
+    "speed": {
+      "walk": 40,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 60,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 22,
+      "dexterity": 12,
+      "constitution": 24,
+      "intelligence": 16,
+      "wisdom": 15,
+      "charisma": 16
+    },
+    "saves": [
+      {
+        "ability": "Intelligence",
+        "bonus": 7
+      },
+      {
+        "ability": "Wisdom",
+        "bonus": 6
+      },
+      {
+        "ability": "Charisma",
+        "bonus": 7
+      }
+    ],
+    "skills": [
+      {
+        "name": "Perception",
+        "bonus": 2
+      }
+    ],
+    "vulnerabilities": [],
+    "resistances": [],
+    "immunities": [
+      "Fire"
+    ],
+    "condition_immunities": [],
+    "senses": [
+      "Darkvision 120 ft.",
+      "Passive Perception 12"
+    ],
+    "languages": [
+      "Ignan"
+    ],
+    "cr": 11,
+    "xp": "7,200 XP",
+    "abilities": [
+      {
+        "name": "Elemental Demise",
+        "description": "If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the efreeti was wearing or carrying."
+      },
+      {
+        "name": "Innate Spellcasting (Charisma)",
+        "description": "The efreeti's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components: At will: detect magic. 3/day each: enlarge/reduce, tongues. 1/day each: conjure elemental (fire elemental only), gaseous form, invisibility, major image, plane shift, wall of fire."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "",
+        "to_hit": 0,
+        "range": "",
+        "target": "",
+        "damage": [],
+        "description": "The efreeti makes two scimitar attacks or uses its Hurl Flame twice."
+      },
+      {
+        "name": "Scimitar",
+        "type": "Melee Weapon Attack",
+        "to_hit": 10,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "2d6 + 6",
+            "type": "Slashing"
+          },
+          {
+            "formula": "2d6",
+            "type": "Fire"
+          }
+        ],
+        "description": "Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) fire damage."
+      },
+      {
+        "name": "Hurl Flame",
+        "type": "Ranged Spell Attack",
+        "to_hit": 7,
+        "range": "120 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "5d6",
+            "type": "Fire"
+          }
+        ],
+        "description": "Hit: 17 (5d6) fire damage."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "Hulking genies of the Elemental Plane of Fire, the efreet are masters of flame, immune to fire and able to create it on a whim. Haughty and cruel, they view all other creatures as enemies or potential serfs. Most efreet reside on the Elemental Plane of Fire, either in great domed fortresses of black glass and basalt surrounded by churning lakes of fire, or in the fabled City of Brass. On the Material Plane, efreet dwell in fiery regions such as volcanoes and the burning expanses of the world's deserts.",
+    "tags": [
+      "Elemental",
+      "Genie"
+    ],
+    "habitat": [
+      "Planar (Elemental Plane of Fire)",
+      "Volcanoes",
+      "Deserts"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30784/76/1000/1000/638062028391329539.png"
+  },
+  {
+    "name": "Skeleton",
+    "size": "Medium",
+    "type": "Undead",
+    "alignment": "Lawful Evil",
+    "armor": {
+      "value": 13,
+      "type": "Armor Scraps",
+      "notes": ""
+    },
+    "hp": {
+      "average": 13,
+      "formula": "2d8 + 4"
+    },
+    "speed": {
+      "walk": 30,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 10,
+      "dexterity": 14,
+      "constitution": 15,
+      "intelligence": 6,
+      "wisdom": 8,
+      "charisma": 5
+    },
+    "saves": [],
+    "skills": [
+      {
+        "name": "Perception",
+        "bonus": 9
+      }
+    ],
+    "vulnerabilities": [
+      "Bludgeoning"
+    ],
+    "resistances": [],
+    "immunities": [
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Exhaustion",
+      "Poisoned"
+    ],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception 9"
+    ],
+    "languages": [
+      "Understands all languages it knew in life but can't speak"
+    ],
+    "cr": 0.25,
+    "xp": "50 XP",
+    "abilities": [
+      {
+        "name": "Undead Nature",
+        "description": "A skeleton doesn't require air, food, drink, or sleep. It can fight with weapons and wear armor, following orders to the letter, though it adapts poorly to changing circumstances. Skeletons can't read, speak, emote, or communicate in any way except to nod, shake their heads, or point. They are able to accomplish a variety of relatively complex tasks. Although they lack the intellect they possessed in life, skeletons aren't mindless. Rather than break its limbs attempting to batter its way through an iron door, a skeleton tries the handle first. If that doesn't work, it searches for another way through or around the obstacle."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Shortsword",
+        "type": "Melee Weapon Attack",
+        "to_hit": 4,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "1d6 + 2",
+            "type": "Piercing"
+          }
+        ],
+        "description": "Hit: 5 (1d6 + 2) piercing damage."
+      },
+      {
+        "name": "Shortbow",
+        "type": "Ranged Weapon Attack",
+        "to_hit": 4,
+        "range": "80/320 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "1d6 + 2",
+            "type": "Piercing"
+          }
+        ],
+        "description": "Hit: 5 (1d6 + 2) piercing damage."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "Skeletons are reanimated humanoid bones bearing the equipment they had in life. They have rudimentary faculties and greater agility than zombies and similar shambling corpses. While they aren't capable of creating plans of their own, they avoid obvious barriers and self-destructive situations. Skeletons rise at the summons of necromancers and foul spirits, or rise of their own accord in places saturated with death and loss. They attack without mercy and fight until destroyed.",
+    "tags": [
+      "Undead"
+    ],
+    "habitat": [
+      "Planar (Shadowfell)",
+      "Underdark",
+      "Urban"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30835/849/1000/1000/638063922565505819.png"
+  },
+  {
+    "name": "Death Dog",
+    "size": "Medium",
+    "type": "Monstrosity",
+    "alignment": "Neutral Evil",
+    "armor": {
+      "value": 12,
+      "type": "",
+      "notes": ""
+    },
+    "hp": {
+      "average": 39,
+      "formula": "6d8 + 12"
+    },
+    "speed": {
+      "walk": 40,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 15,
+      "dexterity": 14,
+      "constitution": 14,
+      "intelligence": 3,
+      "wisdom": 12,
+      "charisma": 5
+    },
+    "saves": [],
+    "skills": [
+      {
+        "name": "Perception",
+        "bonus": 5
+      }
+    ],
+    "vulnerabilities": [],
+    "resistances": [],
+    "immunities": [],
+    "condition_immunities": [],
+    "senses": [
+      "Darkvision 120 ft.",
+      "Passive Perception 15"
+    ],
+    "languages": [],
+    "cr": 1,
+    "xp": "200 XP",
+    "abilities": [
+      {
+        "name": "Two-Headed",
+        "description": "The dog has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious. If the dog isn't surprised, it can't be surprised."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "Multiattack",
+        "description": "The dog makes two bite attacks."
+      },
+      {
+        "name": "Bite",
+        "type": "Melee Weapon Attack",
+        "to_hit": 4,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "1d6 + 2",
+            "type": "Piercing"
+          },
+          {
+            "formula": "2d6",
+            "type": "Poison"
+          }
+        ],
+        "description": "Hit: 5 (1d6 + 2) piercing damage plus 7 (2d6) poison damage."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "A death dog is a foul, two-headed hound of Hades that stalks the Material Plane. Its bite transmits a disease that rots the flesh and causes those it slays to rise as zombies. The twin heads of a death dog work in tandem, but each is an independent creature. If one head is asleep, the other might be awake, and while one can be fooled by a clever ploy, the other might see through it.",
+    "tags": [
+      "Monstrosity"
+    ],
+    "habitat": [
+      "Deserts",
+      "Plains",
+      "Underdark"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30849/289/1000/1000/638064498770586789.png"
+  },
+  {
+    "name": "Mummy",
+    "size": "Medium",
+    "type": "Undead",
+    "alignment": "Lawful Evil",
+    "armor": {
+      "value": 8,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 58,
+      "formula": "9d8 + 18"
+    },
+    "speed": {
+      "walk": 20,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 16,
+      "dexterity": 8,
+      "constitution": 15,
+      "intelligence": 6,
+      "wisdom": 10,
+      "charisma": 12
+    },
+    "saves": [],
+    "skills": [],
+    "vulnerabilities": [
+      "Fire"
+    ],
+    "resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing from Nonmagical Attacks"
+    ],
+    "immunities": [
+      "Necrotic",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Paralyzed",
+      "Poisoned"
+    ],
+    "senses": [
+      "Darkvision 60 ft.",
+      "Passive Perception 10"
+    ],
+    "languages": [
+      "Languages it knew in life"
+    ],
+    "cr": 3,
+    "xp": "700 XP",
+    "abilities": [
+      {
+        "name": "Dreadful Glare",
+        "description": "The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw or be frightened until the end of the mummy's next turn. If the target succeeds on the saving throw, it is immune to the Dreadful Glare of all mummies for 24 hours."
+      },
+      {
+        "name": "Mummy Rot",
+        "description": "If a creature is cursed by Mummy Rot, its hit point maximum is reduced by 10 (3d6) every 24 hours that pass, and it can't regain hit points. The curse lasts until removed by the Remove Curse spell or other magic."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "Multiattack",
+        "description": "The mummy can use its Dreadful Glare and makes one attack with its Rotting Fist."
+      },
+      {
+        "name": "Rotting Fist",
+        "type": "Melee Weapon Attack",
+        "to_hit": 5,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "2d6 + 3",
+            "type": "Bludgeoning"
+          },
+          {
+            "formula": "2d6",
+            "type": "Necrotic"
+          }
+        ],
+        "description": "Hit: 10 (2d6 + 3) bludgeoning damage plus 7 (2d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot."
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_actions_count": 0,
+    "legendary_resistances": 0,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "A mummy is the undead guardian of an ancient tomb or temple, created by dark magic to protect sacred relics and the remains of a powerful being. It is infused with necrotic energy, its touch causing flesh to rot and preventing healing. Mummies are relentlessly driven to fulfill their ancient duties, attacking any who desecrate their charge with a terrible, soul-chilling stare.",
+    "tags": [
+      "Undead"
+    ],
+    "habitat": [
+      "Deserts",
+      "Tombs",
+      "Temples"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30833/586/1000/1000/638063867954193239.png"
+  },
+  {
+    "name": "Mummy Lord",
+    "size": "Medium",
+    "type": "Undead",
+    "alignment": "Lawful Evil",
+    "armor": {
+      "value": 17,
+      "type": "Natural Armor",
+      "notes": ""
+    },
+    "hp": {
+      "average": 167,
+      "formula": "17d8 + 91"
+    },
+    "speed": {
+      "walk": 20,
+      "burrow": 0,
+      "climb": 0,
+      "fly": 0,
+      "swim": 0
+    },
+    "stats": {
+      "strength": 18,
+      "dexterity": 10,
+      "constitution": 17,
+      "intelligence": 11,
+      "wisdom": 18,
+      "charisma": 17
+    },
+    "saves": [
+      {
+        "name": "Con",
+        "bonus": 9
+      },
+      {
+        "name": "Int",
+        "bonus": 6
+      },
+      {
+        "name": "Wis",
+        "bonus": 9
+      },
+      {
+        "name": "Cha",
+        "bonus": 8
+      }
+    ],
+    "skills": [
+      {
+        "name": "History",
+        "bonus": 6
+      },
+      {
+        "name": "Religion",
+        "bonus": 6
+      }
+    ],
+    "vulnerabilities": [
+      "Fire"
+    ],
+    "resistances": [
+      "Bludgeoning",
+      "Piercing",
+      "Slashing from Nonmagical Attacks"
+    ],
+    "immunities": [
+      "Necrotic",
+      "Poison"
+    ],
+    "condition_immunities": [
+      "Charmed",
+      "Exhaustion",
+      "Frightened",
+      "Paralyzed",
+      "Poisoned"
+    ],
+    "senses": [
+      "Darkvision 120 ft.",
+      "Passive Perception 14"
+    ],
+    "languages": [
+      "Abyssal",
+      "Common",
+      "Infernal"
+    ],
+    "cr": 15,
+    "xp": "13,000 XP",
+    "abilities": [
+      {
+        "name": "Magic Resistance",
+        "description": "The mummy lord has advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Rejuvenation",
+        "description": "If it has a phylactery, a destroyed mummy lord gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+      },
+      {
+        "name": "Spellcasting",
+        "description": "The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:\n\nCantrips (at will): Sacred Flame, Thaumaturgy\n1st level (4 slots): Command, Guiding Bolt, Shield of Faith\n2nd level (3 slots): Hold Person, Spiritual Weapon\n3rd level (3 slots): Animate Dead, Spirit Guardians\n4th level (3 slots): Banishment, Guardian of Faith\n5th level (2 slots): Contagion, Insect Plague"
+      },
+      {
+        "name": "Undead Nature",
+        "description": "The mummy lord doesn't require air, food, drink, or sleep."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "type": "Multiattack",
+        "description": "The mummy lord can use its Dreadful Glare and makes one attack with its Rotting Fist."
+      },
+      {
+        "name": "Dreadful Glare",
+        "type": "Action",
+        "description": "The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw or be frightened until the end of the mummy lord's next turn. If the target succeeds on the saving throw, it is immune to the Dreadful Glare of all mummies and mummy lords for 24 hours."
+      },
+      {
+        "name": "Rotting Fist",
+        "type": "Melee Weapon Attack",
+        "to_hit": 9,
+        "range": "5 ft.",
+        "target": "One target",
+        "damage": [
+          {
+            "formula": "3d6 + 4",
+            "type": "Bludgeoning"
+          },
+          {
+            "formula": "4d6",
+            "type": "Necrotic"
+          }
+        ],
+        "description": "Hit: 14 (3d6 + 4) bludgeoning damage plus 14 (4d6) necrotic damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum is reduced by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust."
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "description": "The mummy lord makes a Wisdom (Perception) check."
+      },
+      {
+        "name": "Mystic Gaze (Costs 2 Actions)",
+        "description": "The mummy lord gains darkvision out to a range of 120 feet until the end of its next turn. During this time, it can see invisible creatures and objects, and it can see into the Ethereal Plane."
+      },
+      {
+        "name": "Blinding Dust (Costs 3 Actions)",
+        "description": "Blinding dust and desiccated flesh billow forth from the mummy lord. Each creature within 10 feet of the mummy lord must succeed on a DC 16 Constitution saving throw or be blinded until the end of the creature's next turn."
+      }
+    ],
+    "legendary_actions_count": 3,
+    "legendary_resistances": 3,
+    "special_abilities": [],
+    "reactions": [],
+    "description": "A mummy lord is an ancient, powerful mummy that has attained incredible magical abilities and often commands legions of lesser undead. Driven by a twisted sense of duty, vengeance, or madness, it is a formidable foe that can decimate adventurers with its potent spells and horrifying touch. Unlike common mummies, a mummy lord often possesses a phylactery, making it incredibly difficult to truly destroy.",
+    "tags": [
+      "Undead"
+    ],
+    "habitat": [
+      "Deserts",
+      "Tombs",
+      "Temples",
+      "Ancient Ruins"
+    ],
+    "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30833/586/1000/1000/638063867954193239.png"
+  },
+  {
+  "name": "Lamia",
+  "size": "Large",
+  "type": "Monstrosity",
+  "alignment": "Chaotic Evil",
+  "armor": {
+    "value": 13,
+    "type": "Natural Armor",
+    "notes": ""
+  },
+  "hp": {
+    "average": 97,
+    "formula": "13d10 + 26"
+  },
+  "speed": {
+    "walk": 30,
+    "burrow": 0,
+    "climb": 0,
+    "fly": 0,
+    "swim": 0
+  },
+  "stats": {
+    "strength": 16,
+    "dexterity": 13,
+    "constitution": 15,
+    "intelligence": 13,
+    "wisdom": 14,
+    "charisma": 16
+  },
+  "saves": [
+    { "name": "Dex", "bonus": 4 },
+    { "name": "Con", "bonus": 5 },
+    { "name": "Wis", "bonus": 5 }
+  ],
+  "skills": [
+    { "name": "Deception", "bonus": 7 },
+    { "name": "Insight", "bonus": 4 },
+    { "name": "Perception", "bonus": 4 },
+    { "name": "Stealth", "bonus": 3 }
+  ],
+  "vulnerabilities": [],
+  "resistances": [],
+  "immunities": [],
+  "condition_immunities": [],
+  "senses": [
+    "Darkvision 60 ft.",
+    "Passive Perception 14"
+  ],
+  "languages": ["Abyssal", "Common"],
+  "cr": 4,
+  "xp": "1100 XP",
+  "abilities": [
+    {
+      "name": "Innate Spellcasting",
+      "description": "The lamia's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring no material components:\n\nAt will: Disguise Self (can't change its creature type), Minor Illusion, Silent Image\n3/day each: Charm Person, Command, Entrall, Mirror Image\n1/day each: Geas, Major Image"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "type": "Multiattack",
+      "description": "The lamia makes two attacks: one with its claws and one with its dagger, or two with its dagger."
+    },
+    {
+      "name": "Claws",
+      "type": "Melee Weapon Attack",
+      "to_hit": 5,
+      "range": "5 ft.",
+      "target": "One target",
+      "damage": [
+        { "formula": "2d8 + 3", "type": "Slashing" }
+      ],
+      "description": "Hit: 12 (2d8 + 3) slashing damage."
+    },
+    {
+      "name": "Dagger",
+      "type": "Melee Weapon Attack",
+      "to_hit": 5,
+      "range": "5 ft.",
+      "target": "One target",
+      "damage": [
+        { "formula": "1d4 + 3", "type": "Piercing" }
+      ],
+      "description": "Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Wisdom Drain",
+      "type": "Action",
+      "description": "The lamia touches one incapacitated creature. The target must succeed on a DC 13 Wisdom saving throw or take 4d8 psychic damage, and the lamia regains hit points equal to the damage taken. The target's Wisdom score is reduced by 1d4. The target dies if this reduces its Wisdom to 0. Otherwise, the reduction lasts until the target finishes a long rest or until it is affected by the Greater Restoration spell or other magic that restores ability scores. An incapacitated creature that takes damage from Wisdom Drain can't regain hit points until it finishes a long rest."
+    }
+  ],
+  "legendary_actions": [],
+  "legendary_actions_count": 0,
+  "legendary_resistances": 0,
+  "special_abilities": [],
+  "reactions": [],
+  "description": "A lamia is a depraved desert predator, part woman and part lion, that lures humanoids to their doom with its deceptive beauty and powerful magic. They delight in the corruption and despair of their victims, seeking to drain their minds and souls. Lamias dwell in opulent lairs hidden in remote ruins, surrounded by the charmed servants and ruined victims they have collected over the centuries.",
+  "tags": ["Monstrosity"],
+  "habitat": ["Deserts", "Ruins", "Tombs"],
+  "image_url": "https://www.dndbeyond.com/avatars/thumbnails/30832/372/1000/1000/638063836985282473.png"
+}
+]
